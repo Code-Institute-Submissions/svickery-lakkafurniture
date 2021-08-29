@@ -1,26 +1,25 @@
 {% extends "base.html" %}
 {% load static %}
 
-{% block content %}
-<ul class="nav justify-content-center">
-    <li class="nav-item">
-      <a class="nav-link" aria-current="page" href="https://www.facebook.com/">Active</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Link</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Link</a>
-    </li>
-  </ul>
-
-  <div class="container">
+{% block page_header %}
+  <div class="container header-container">
     <div class="row">
       <div class="col">
-        1 of 2
-      </div>
-      <div class="col">
-        2 of 2
       </div>
     </div>
+  </div>
+{% endblock %}
+
+{% block content %}
+  <div class="container h-100">
+    <div class="row h-100">
+      <div class="col7 col-md-6 my-auto">
+        <h1 class="display-4 logo-font text-black">Lakka Furniture</h1>
+        <h3>The best bespoke furniture around!</h3>
+          <h4>
+            <a href="" class="view-btn btn btn-lg rounded-1 text-uppercase py-3">View Furniture Here!</a> 
+          </h4>
+      </div>
+    </div>
+  </div>
 {% endblock %}
