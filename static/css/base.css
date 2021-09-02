@@ -23,7 +23,7 @@ body   {
 }
 
 .bg-white {
-    background-color: #664433 !important;
+    background-color: #f2f2f2 !important;
 }
 
 .logo-font {
@@ -35,14 +35,14 @@ body   {
 }
 
 .view-btn {
-    background: #664433;
-    color: white;
+    background: #f2f2f2;
+    color: #330000;
     min-width: 260px;
 }
 
 .btn-black {
-    background: #664433;
-    color: #f2f2f2;
+    background: #f2f2f2;
+    color: #330000;
 }
 
 .view-btn:hover,
@@ -51,16 +51,16 @@ body   {
 .btn-black:hover,
 .btn-black:active,
 .btn-black:focus {
-    background: #664433;
-    color: #f2f2f2;
+    background: #f2f2f2;
+    color: #330000;
 }
 
-.text-black {
-    color: #f2f2f2 !important;
+.home-text {
+    color: #330000 !important;
 }
 
 .border-black {
-    border: 1px solid #664433 !important;
+    border: 1px solid #f2f2f2 !important;
 }
 
 /* -------------------------------- Media Queries */
