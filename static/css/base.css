@@ -119,6 +119,11 @@ h2, h3 {
     text-align: center;
 }
 
+.copyright  {
+    background-color: black;
+    color: #f9bc50;
+}
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
