@@ -1,1 +1,1 @@
-web: gunicorn lakkafurniture.wsgi:application
+web: gunicorn lakka_furniture.wsgi:application
