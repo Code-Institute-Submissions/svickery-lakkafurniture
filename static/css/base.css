@@ -27,7 +27,7 @@ img {
 }
 
 .navbar-nav {
-    font-size: 12px !important;
+    font-size: 10px !important;
 }
 
 .about-img {
@@ -37,6 +37,14 @@ img {
 
 h2, h3 {
     text-align: center;
+}
+
+.nav-logo {
+    text-align: start;
+}
+
+.nav-auth {
+    text-align: end;
 }
 
 .topnav {
@@ -50,7 +58,7 @@ h2, h3 {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 12px;
   }
   
 .topnav a:hover {
@@ -72,15 +80,11 @@ h2, h3 {
     width: 1.5rem;
 }
 
-.bg-white {
-    background-color: #f2f2f2 !important;
-}
-
 .logo-font {
     text-transform: uppercase;
 }
 
-.main-logo-link {
+.nav-link {
     width: fit-content;
 }
 
@@ -149,5 +153,16 @@ h2, h3 {
 
     .header-container {
         padding-top: 164px;
+    }
+}
+
+/* pad the top a bit when navbar is collapsed on mobile */
+@media (max-width: 991px) {
+    .header-container {
+        padding-top: 116px;
+    }
+
+    body {
+        height: calc(100vh - 116px);
     }
 }
