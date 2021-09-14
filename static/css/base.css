@@ -14,7 +14,6 @@ body   {
 }
 
 .about-con {
-    padding: 10px;
     border: 1px solid black;
 }
 
@@ -28,11 +27,6 @@ img {
 
 .navbar-nav {
     font-size: 10px !important;
-}
-
-.about-img {
-    height: 100%;
-    width: 100%;
 }
 
 h2, h3 {
@@ -121,12 +115,6 @@ h2, h3 {
     max-width: 100%;
 }
 
-.about-img {
-    max-width: 400px;
-    height: 400px;
-    text-align: center;
-}
-
 a.category-badge > span.badge:hover {
     background: #212529 !important;
     color: #fff !important;
@@ -158,6 +146,44 @@ a.category-badge > span.badge:hover {
     background-color: black;
     color: #f9bc50;
 }
+
+.about-img {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding: 0 !important;
+}
+
+.about-img:after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+  }
+  
+.about-img img {
+    position: absolute;
+    width: 100%;
+    height: auto;
+  }
+
+.card-img {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.card-img:after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+  }
+  
+.card-img img {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    transform: scale(2);
+  }
 
 /* -------------------------------- Media Queries */
 
