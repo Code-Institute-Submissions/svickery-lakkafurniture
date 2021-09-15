@@ -1,6 +1,10 @@
 # Lakka Furniture
 ## Bespoke Furniture E-Commerce Site
 
+Admin credentials:
+* User = admin
+* password = Admin1
+
 [View website in Github pages!]()
 
 [View in Heroku](https://lakkafurniture.herokuapp.com/)
