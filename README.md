@@ -189,7 +189,7 @@ To make a clone of this site, please follow these steps:
 
 #### Content
 
-All text and content on the page was written by myself apart from some Python logic which I found on a fellow code institute's website called Travel Reviews. I also took the user authentication and CRUD functionality from the code institute lessons. 
+All text and content on the page was written by myself apart from some Python logic which I found on a either code institute lessons or stack overflow or youtube. 
 
 My Terms and Conditions were taken from [LawDepot](https://www.lawdepot.com/) and changed to suit the sites needs.
 
