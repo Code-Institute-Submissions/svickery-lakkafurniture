@@ -151,9 +151,12 @@ a.category-badge > span.badge:hover {
     color: #330000;
 }
 
-.btt-link {
+.btt-link,
+.update-link,
+.remove-item {
     cursor: pointer;
 }
+
 
 .copyright  {
     background-color: black;
