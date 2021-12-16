@@ -13,8 +13,12 @@ body   {
     color: #557a95;   
 }
 
-.about-con {
+.about-con,
+.about-img {
+    max-height: 500px;
+    max-width: 500px;
     border: 1px solid black;
+    background-color: #f9bc50;
 }
 
 img {
@@ -65,7 +69,7 @@ h2, h3 {
   }
 
 .home-para {
-    padding-top: 30px;
+    padding-top: 10px;
 }
 
 /* from Bulma */
@@ -83,6 +87,19 @@ h2, h3 {
 
 .nav-link {
     width: fit-content;
+}
+
+.btn {
+    -webkit-border-radius: 5px !important;
+    -moz-border-radius: 5px !important;
+    border-radius: 5px !important;
+    background-color: #f9bc50 !important;
+}
+
+.form-control {
+    -webkit-border-radius: 5px !important;
+    -moz-border-radius: 5px !important;
+    border-radius: 5px !important;
 }
 
 .view-btn {
@@ -124,7 +141,7 @@ h2, h3 {
 }
 
 .h3-home {
-    margin-top: 200px;
+    margin-top: 150px;
 }
 
 .border-black {
