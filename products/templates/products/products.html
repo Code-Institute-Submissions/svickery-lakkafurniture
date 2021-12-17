@@ -45,11 +45,11 @@
                     </div>
                 </div>
                 </div>
-                <div class="row card-row">
+                <div class="row col-12 row-card">
                     {% for product in products %}
-                        <div class="col-12">
+                        <div class="card-order col-12">
                             <div class="card h-100 border-0">
-                                <div class="card-img">
+                                <div class="card-img card-order">
                                 {% if product.image %}
                                 <a href="{% url 'product_detail' product.id %}">
                                     <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
@@ -83,7 +83,7 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- {% if forloop.counter|divisibleby:1 %}
+                        {% if forloop.counter|divisibleby:1 %}
                             <div class="col-12 d-sm-none mb-5">
                                 <hr>
                             </div>
@@ -102,7 +102,7 @@
                             <div class="col-12 d-none d-xl-block mb-5">
                                 <hr>
                             </div>
-                        {% endif %} -->
+                        {% endif %}
                     {% endfor %}
                 </div>
             </div>
