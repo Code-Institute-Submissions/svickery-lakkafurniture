@@ -16,5 +16,14 @@
     <hr>
     <br>
     <p class="home-text text-center">{{ post.body }}</p>
+    <br>
+    <br>
+
+    <a href="{% url 'blog' %}" class="btn btn-outline-black rounded-0 mt-5">
+        <span class="icon">
+            <i class="fas fa-chevron-left"></i>
+        </span>
+        <span class="home-text text-uppercase">Back To Blog</span>
+    </a>
 
 {% endblock %}

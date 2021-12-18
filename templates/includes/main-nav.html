@@ -43,10 +43,14 @@
 
         </li>
         <li class="nav-item dropdown">
-            <a class="logo-font nav-link home-text" href="#" id="contact-link"
-             aria-haspopup="true" aria-expanded="false">
-                Contact
+            <a class="logo-font nav-link home-text" href="{% url 'blog' %}" id="contact-link"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Blog
             </a>
+            <div class="dropdown-menu border-0" aria-labelledby="furniture-link">
+                <a href="{% url 'blog' %}" class="dropdown-item">Blog Posts</a>
+                <a href="{% url 'add_post' %}" class="dropdown-item">Add Post</a>
+            </div>
         </li>
     </ul>
 </div>
