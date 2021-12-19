@@ -256,6 +256,10 @@ img {
     justify-content: center;
   }
 
+.notification.space-below   {
+    margin-bottom: 20px;
+}
+
 /* ------------------------------- bootstrap toasts */
 
 .message-container {
