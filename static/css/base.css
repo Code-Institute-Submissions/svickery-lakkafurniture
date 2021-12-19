@@ -231,7 +231,8 @@ img {
     justify-content: center;
 } */
 
-.card-img {
+.card-img, 
+.blog-img {
     position: relative;
     display: block;
     margin-left: auto;
