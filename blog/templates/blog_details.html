@@ -17,7 +17,7 @@
     <small><a href="{% url 'delete_post' post.pk %}"a>Delete</a></small><br>
     <hr>
     <br>
-    <p class="home-text text-center">{{ post.body }}</p>
+    <p class="home-text text-center align-justify">{{ post.body|safe }}</p>
     <br>
     <br>
 

@@ -17,6 +17,7 @@
 <div class="form-group">
 <form class="text-center" method="POST">
     {% csrf_token %}
+    {{ form.media }}
     {{ form.as_p }}
         <button class="home-text btn border-black text-uppercase">Post</button>
 </div>
