@@ -13,6 +13,8 @@
 
     <h2 class="home-text text-center">{{ post.title }}</h2>
     <small class="home-text">By: {{ post.author }}</small><br>
+    <small><a href="{% url 'update_post' post.pk %}"a>Edit</a></small>
+    <small><a href="{% url 'delete_post' post.pk %}"a>Delete</a></small><br>
     <hr>
     <br>
     <p class="home-text text-center">{{ post.body }}</p>
