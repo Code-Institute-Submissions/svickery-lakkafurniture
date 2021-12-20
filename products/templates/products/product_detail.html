@@ -38,11 +38,6 @@
                         </a>
                     </p>
                     {% endif %}
-                    {% if product.rating %}
-                        <small class="home-text text-center text-muted"><i class="fas fa-star mr-1"></i>{{ product.rating }} / 5</small>
-                    {% else %}
-                        <small class="home-text text-center text-muted">No Rating</small>
-                    {% endif %}
                     {% if request.user.is_superuser %}
                         <small class="ml-3">
                             <a href="{% url 'edit_product' product.id %}">Edit</a> | 
@@ -101,33 +96,34 @@
 
     <h3 class="home-text text-center">Reviews</h3>
 
-                            <div class="reviews-wrapper">
+                            <div class="reviews-wrapper text-center home-text">
                                 {% for review in product.reviews.all %}
                                     <div class="notification space-below">
                                         <p>
-                                            <strong>Date: </strong>{{ review.date_added|date:"Y-m-d" }},
                                             <strong>Stars: </strong>{{ review.stars }}
                                         </p>
 
                                         {{ review.content }}
                                     </div>
                                 {% empty %}
-                                    <div class="notification space-below">
-                                        No reviews yet.....
+                                    <div class="notification space-below text-center home-text">
+                                        No reviews for this item yet.....
                                     </div>
                                 {% endfor %}
                             </div>
 
-                            <div class="notification space-below">
+                            <div class="notification space-below text-center home-text">
                                 {% if request.user.is_authenticated %}
                                 <form method="POST" action=".">
                                     {% csrf_token %}
 
-                                    <div class="field">
-                                        <label>Stars</label>
-
-                                        <div class="control">
+                                    <div class="field text-center home-text">
+                                        <h4>Stars</h4>
+                                
+                                        
+                                        <div class="control text-center home-text">
                                             <div class="select">
+                                                <i class="fas fa-star"></i>
                                                 <select name="stars" id="">
                                                     <option value="1">1</option>
                                                     <option value="2">2</option>
@@ -138,18 +134,18 @@
                                             </div>
                                         </div>
                                     </div>
-
-                                    <div class="field">
-                                        <label>Content</label>
-
+                                    <br>
+                                    <div class="field text-center home-text">
+                                        <h4>Review</h4>
+                                        <br>
                                         <div class="control">
-                                            <textarea class="textarea" name="content"></textarea>
+                                            <textarea class="textarea text-center home-text" name="content"></textarea>
                                         </div>
                                     </div>
-
-                                    <div class="field">
-                                        <div class="control">
-                                            <button class="button is-success">Submit</button>
+                                    <br>
+                                    <div class="field text-center home-text">
+                                        <div class="control ">
+                                            <button class="is-success home-text btn btn-black rounded-0 text-uppercase mt-5">Submit</button>
                                         </div>
                                     </div>
                                 </form>

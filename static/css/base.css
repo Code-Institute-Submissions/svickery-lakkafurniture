@@ -12,6 +12,8 @@ body   {
 .row {
     margin-left: 0 !important;
     margin-right: 0 !important; 
+    text-align: center;
+    justify-content: center;
 }
 
 .navbar-nav {
@@ -58,8 +60,9 @@ body   {
     padding: 0;
 }
 
-h2, h3, h4 {
+h2, h3, h4, li, ul, label, input {
     text-align: center;
+    color: #330000 !important;
 }
 
 /* from Bulma */
@@ -76,6 +79,7 @@ h2, h3, h4 {
     -moz-border-radius: 5px !important;
     border-radius: 5px !important;
     background-color: #f9bc50 !important;
+    border-color: black;
 }
 
 .form-control {
@@ -153,6 +157,10 @@ h2, h3, h4 {
 
 .h3-home {
     margin-top: 50px;
+}
+
+.about-row {
+    
 }
 
 .about-con {
@@ -259,6 +267,17 @@ img {
 .notification.space-below   {
     margin-bottom: 20px;
 }
+
+textarea {
+    margin:0px 0px;
+    padding:5px;
+    height:16px;
+    line-height:16px;
+    width:600px;
+    height: 400px;
+    display:block;
+    margin:0px auto;    
+  }
 
 /* ------------------------------- bootstrap toasts */
 

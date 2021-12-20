@@ -11,12 +11,14 @@
 
 {% block content %}
 
-<ul>
+<ul class="home-text text-left">
 {% for post in object_list %}
-    <li class="home-text"><a class="home-text" href="{% url 'blog-article' post.pk %}">{{ post.title }}</a> - 
+    <li class="home-text text-left"><a class="home-text" href="{% url 'blog-article' post.pk %}">{{ post.title }}</a> - 
         {{ post.author }} <small><a href="{% url 'update_post' post.pk %}"a>Edit</a></small>
         <small><a href="{% url 'delete_post' post.pk %}"a>Delete</a></small><br>
-    {{ post.body|slice:"200"|safe }}</li>
+    <p class="home-text text-left">{{ post.body|slice:"200"|safe }}</p></li>
+    <hr>
+    <br>
 {% endfor %}
 </ul>
 
