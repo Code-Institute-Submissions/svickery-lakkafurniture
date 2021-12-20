@@ -90,6 +90,57 @@ As a site owner, I want to:
 
 The site changed a lot from its original conception. Due to time constraints due to health issues and working a full time job also I had to rapidly change while thinking on my feet. The basic needs are there, but I would have preferred to add a review system to the site.  
 
+## Features
+
+The website has a scrolling effect on the index page and reviews page using a parallax effect. This is so the website not only looks good but also be navigated easily. There are seperate pages for different needs such as sign up form, log in form and add review form once a member. The navigation bar has been fixed at the top so that all pages are available during use of the site. In total there are nine pages available to use. However if you are not a member there are only four pages to view. On the reviews page there is a search bar to search for whichever movie they would like to see a review of. There is a footer with social media links at the bottom of each page. This footer also contatins copyright information.  
+
+#### Home
+
+The Home page features one large photography covering the top of the page. This includes hero text on the image. The hero text has a link to join the website as a member. Below the image there is an about section explaining to the user what the website is for and how they can get involved themselves. The name of the site also appears as a header and there is no logo used for the site. 
+
+#### Reviews
+
+The reviews page has a similar layout to the home page with a large image at the top and hero text allowing the user to join as a member easily. Below this image there are then cards which have large eye catching images and beneath those images, there is all the information you would need about a movie. Below that further is the review of the movie. This review section has a scrolling effect so that the user doesn't have to navigate elsewhere to read it in its full form. At the bottom of the review is the contributors name.   
+
+#### Sign Up
+
+A page linked on both the home and review pages. There is a basic form for your details to become a contributor to the site. This form also has a link to the terms and conditions of the website.   
+
+#### Log In
+
+This page has a simple log in form for users who are already members. 
+
+#### Profile 
+
+Once a user has logged in, they will be redirected immediately to their own profile page. This has a flash message to welcome the user, a title for the profile user and an add review button underneath. This is designed to encourage the user to contribute immediately. Beneath that the user will be able to see all their past reviews they have written. Each review has an option to edit and delete in bold red. The edit function opens a new page.
+
+#### Add Review
+
+Located in the navigation bar as well as being able to from the previously mentioned add review button on the profile page. Users can add a review whenever the choose and will be given a simple form to follow. This includes a url link for the user to add for the review. Once the information is complete and the review is written, there is a submit button to add this to the site. This review will be visible to all people navigating to the site. Dropdown menu's have been added to the genre and rating fields, to make it easier for the user.
+
+#### Edit Review
+
+This is not available in the navigation but links directly from the edit button. This page will render all the previous information supplied in the review. Dropdown menu's have been added to the genre and rating fields, to make it easier for the user. 
+
+#### Log Out
+
+This is located in the navbar and is only a single click function. 
+
+#### Terms and Conditions
+
+Not located in the navbar and only accessible from the sign up form. 
+
+#### Footer
+
+In the footer is copyright information and links to the social media sites.
+
+#### Possible Future Features
+
+* Use an API to bring local current showing times in cinemas near them. 
+* A comments section for each review. Only members are allowed to use this.
+* Could be expanded to include TV shows also.
+
+
 ## Technologies Used
 
 * The project uses HTML, CSS and JavaScript languages. 
@@ -107,6 +158,7 @@ The site changed a lot from its original conception. Due to time constraints due
 * [JS Lint](https://jslint.com/) - Used to ensure JavaScript is correct.
 * [Python](https://www.python.org/) - Language used to present data.
 * [MongoDB](https://www.mongodb.com/) - Database used for site data schema.
+* [Django](https://www.djangoproject.com/) - Python Framework used for many shortcuts in coding.
 * [Jinja](https://jinja.palletsprojects.com/en/3.0.x/) - Templating language used with Python and Flask.
 * [Flask](https://flask.palletsprojects.com/en/2.0.x/) - Web framework used with Python.
 * [Heroku](https://id.heroku.com/login) - Cloud based app for deploying websites.
@@ -120,12 +172,13 @@ The site changed a lot from its original conception. Due to time constraints due
 
 #### Further Testing
 
- * Testing could not be completed due to issues deploying to Heroku at the final hour.
- 
+ * Testing was completed on desktop browsers Google Chrome, Safari and Microsoft Edge.
+ * Testing was completed on numerous devices iPhone X, iPhone 12, iPad, Google Pixel, Laptop and Desktop(including larger screen). 
 
 #### Known Bugs
 
-
+ * One bug is that the footer will only be at the bottom of the viewport and not the bottom of the page. 
+ 
 ## Deployment
 
 ### Heroku Deployment
@@ -151,11 +204,15 @@ Next make a Procfile in local repo command line:
 8. One in settings open Reveal Config Vars
 9. In Reveal Config Vars you need to give the following Key/Value statements:
 
-IP : 0.0.0.0
-PORT : 5000
-MONGO_URI : mongodb+srv://<username>:<password>@cluster0.yg2jd.mongodb.net/YOURDATABASENAME?retryWrites=true&w=majority (this is found in MongoDB)
+AWS_ACCESS_KEY_ID : YOURAWSACCESSID
+AWS_SECRET_ACCESS_KEY : YOURAWSSECRETACCESSKEY
+DATABASE_URL : DATABASEADDRESS
+EMAIL_HOST_PASS : EMAILPROVIDERPASSWORD
+EMAIL_HOST_USER : EMAILADDRESS
 SECRET_KEY : YOURSECRETKEY
-MONGO_DBNAME : YOURDATABASENAME
+STRIPE_PUBLIC_KEY : YOURSTRIPEPUBLICKEY
+STRIPE_WH_SECRET : YOURWEBHOOKSECRETKEY
+USE_AWS : TRUE
     
 Once this is completed, look to the right hand corner and click Open App. Your deployed site should appear. 
 
@@ -166,7 +223,7 @@ This site is hosted by GitHub pages and deployed directly from the master branch
 I deployed the site by following the next steps:
 
 1. Logged into GitHub and located the correct repository
-2. Went into Settings at the top of my Enjoy Bristol repository
+2. Went into Settings at the top of my Lakka Furniture repository
 3. Located GitHub "Pages" in settings
 4. Selected "Master Branch" from the "Source" dropdown
 5. Page automatically refreshed, I scrolled back to "Pages" section to find the newly published site
@@ -191,23 +248,21 @@ To make a clone of this site, please follow these steps:
 
 All text and content on the page was written by myself apart from some Python logic which I found on a either code institute lessons or stack overflow or youtube. 
 
-My Terms and Conditions were taken from [LawDepot](https://www.lawdepot.com/) and changed to suit the sites needs.
-
 #### Media
 
 All images used on this page were taken from [unsplash.com](https://unsplash.com/). URL links taken from Google.
 
 #### Code
 
-Code for the navigation bar and footer were taken from [Bootstrap](https://getbootstrap.com/docs/4.5/getting-started/introduction/).
+Code for the navigation bar and footer were taken from [Bootstrap](https://mdbootstrap.com/).
 
-Code for the forms and buttons was taken from [W3 Schools](https://www.w3schools.com/).
+Code for the forms and buttons was taken from [Django](https://www.djangoproject.com/).
 
-Code for User Authentication and CRUD functionality taken from Code Institue lessons.
+Code for User Authentication and CRUD functionality taken from Code Institue lessons and [Django](https://www.djangoproject.com/).
 
-All other code was written by myself with help from sites [Stack Overflow](https://stackoverflow.com/)
+All other code was written by myself with help from sites [Stack Overflow](https://stackoverflow.com/) and Code Institute lessons.
 
 
 ## Acknowledgments
 
-Acknoledgments are for my mentor Adegbenga Adeye. Jim Morel and Brian XS who I met through Slack helped with various other issues. 
+Acknoledgments are for my mentor Adegbenga Adeye. Jim Morel and Brian Smyth who I met through Slack helped with various other issues. 
