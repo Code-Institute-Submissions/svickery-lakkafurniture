@@ -60,7 +60,7 @@ body   {
     padding: 0;
 }
 
-h2, h3, h4, li, ul, label, input {
+h1, h2, h3, h4, li, ul, label, input {
     text-align: center;
     color: #330000 !important;
 }
@@ -155,23 +155,36 @@ h2, h3, h4, li, ul, label, input {
     padding-top: 10px;
 }
 
-.h3-home {
-    margin-top: 50px;
+.home-row {
+    align-items: stretch;
 }
 
-.about-row {
-    
+ul.blog-container {
+    list-style-type: none !important;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+ul.blog-container li {
+    border-color: grey;
+    border-style: solid;
+    border-width: 1px;
+    -webkit-border-radius: 5px !important;
+    -moz-border-radius: 5px !important;
+    border-radius: 5px !important;
+}
+
+ul.blog-container li h2 {
+    text-align: left;
 }
 
 .about-con {
-    max-height: 500px;
-    max-width: 500px;
     border: 1px solid black;
     justify-content: center;
-}
-
-.abt-txt {
-    padding-top: 75px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    max-width: 500px;
 }
 
 .border-black {
