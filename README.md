@@ -90,6 +90,57 @@ As a site owner, I want to:
 
 The site changed a lot from its original conception. Due to time constraints due to health issues and working a full time job also I had to rapidly change while thinking on my feet. The basic needs are there, but I would have preferred to add a review system to the site.  
 
+## Features
+
+The website has a scrolling effect on the index page and reviews page using a parallax effect. This is so the website not only looks good but also be navigated easily. There are seperate pages for different needs such as sign up form, log in form and add review form once a member. The navigation bar has been fixed at the top so that all pages are available during use of the site. In total there are nine pages available to use. However if you are not a member there are only four pages to view. On the reviews page there is a search bar to search for whichever movie they would like to see a review of. There is a footer with social media links at the bottom of each page. This footer also contatins copyright information.  
+
+#### Home
+
+The Home page features one large photography covering the top of the page. This includes hero text on the image. The hero text has a link to join the website as a member. Below the image there is an about section explaining to the user what the website is for and how they can get involved themselves. The name of the site also appears as a header and there is no logo used for the site. 
+
+#### Reviews
+
+The reviews page has a similar layout to the home page with a large image at the top and hero text allowing the user to join as a member easily. Below this image there are then cards which have large eye catching images and beneath those images, there is all the information you would need about a movie. Below that further is the review of the movie. This review section has a scrolling effect so that the user doesn't have to navigate elsewhere to read it in its full form. At the bottom of the review is the contributors name.   
+
+#### Sign Up
+
+A page linked on both the home and review pages. There is a basic form for your details to become a contributor to the site. This form also has a link to the terms and conditions of the website.   
+
+#### Log In
+
+This page has a simple log in form for users who are already members. 
+
+#### Profile 
+
+Once a user has logged in, they will be redirected immediately to their own profile page. This has a flash message to welcome the user, a title for the profile user and an add review button underneath. This is designed to encourage the user to contribute immediately. Beneath that the user will be able to see all their past reviews they have written. Each review has an option to edit and delete in bold red. The edit function opens a new page.
+
+#### Add Review
+
+Located in the navigation bar as well as being able to from the previously mentioned add review button on the profile page. Users can add a review whenever the choose and will be given a simple form to follow. This includes a url link for the user to add for the review. Once the information is complete and the review is written, there is a submit button to add this to the site. This review will be visible to all people navigating to the site. Dropdown menu's have been added to the genre and rating fields, to make it easier for the user.
+
+#### Edit Review
+
+This is not available in the navigation but links directly from the edit button. This page will render all the previous information supplied in the review. Dropdown menu's have been added to the genre and rating fields, to make it easier for the user. 
+
+#### Log Out
+
+This is located in the navbar and is only a single click function. 
+
+#### Terms and Conditions
+
+Not located in the navbar and only accessible from the sign up form. 
+
+#### Footer
+
+In the footer is copyright information and links to the social media sites.
+
+#### Possible Future Features
+
+* Use an API to bring local current showing times in cinemas near them. 
+* A comments section for each review. Only members are allowed to use this.
+* Could be expanded to include TV shows also.
+
+
 ## Technologies Used
 
 * The project uses HTML, CSS and JavaScript languages. 
@@ -121,12 +172,13 @@ The site changed a lot from its original conception. Due to time constraints due
 
 #### Further Testing
 
- * Testing could not be completed due to issues deploying to Heroku at the final hour.
- 
+ * Testing was completed on desktop browsers Google Chrome, Safari and Microsoft Edge.
+ * Testing was completed on numerous devices iPhone X, iPhone 12, iPad, Google Pixel, Laptop and Desktop(including larger screen). 
 
 #### Known Bugs
 
-
+ * One bug is that the footer will only be at the bottom of the viewport and not the bottom of the page. 
+ 
 ## Deployment
 
 ### Heroku Deployment
