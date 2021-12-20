@@ -107,6 +107,7 @@ The site changed a lot from its original conception. Due to time constraints due
 * [JS Lint](https://jslint.com/) - Used to ensure JavaScript is correct.
 * [Python](https://www.python.org/) - Language used to present data.
 * [MongoDB](https://www.mongodb.com/) - Database used for site data schema.
+* [Django](https://www.djangoproject.com/) - Python Framework used for many shortcuts in coding.
 * [Jinja](https://jinja.palletsprojects.com/en/3.0.x/) - Templating language used with Python and Flask.
 * [Flask](https://flask.palletsprojects.com/en/2.0.x/) - Web framework used with Python.
 * [Heroku](https://id.heroku.com/login) - Cloud based app for deploying websites.
@@ -151,11 +152,15 @@ Next make a Procfile in local repo command line:
 8. One in settings open Reveal Config Vars
 9. In Reveal Config Vars you need to give the following Key/Value statements:
 
-IP : 0.0.0.0
-PORT : 5000
-MONGO_URI : mongodb+srv://<username>:<password>@cluster0.yg2jd.mongodb.net/YOURDATABASENAME?retryWrites=true&w=majority (this is found in MongoDB)
+AWS_ACCESS_KEY_ID : YOURAWSACCESSID
+AWS_SECRET_ACCESS_KEY : YOURAWSSECRETACCESSKEY
+DATABASE_URL : DATABASEADDRESS
+EMAIL_HOST_PASS : EMAILPROVIDERPASSWORD
+EMAIL_HOST_USER : EMAILADDRESS
 SECRET_KEY : YOURSECRETKEY
-MONGO_DBNAME : YOURDATABASENAME
+STRIPE_PUBLIC_KEY : YOURSTRIPEPUBLICKEY
+STRIPE_WH_SECRET : YOURWEBHOOKSECRETKEY
+USE_AWS : TRUE
     
 Once this is completed, look to the right hand corner and click Open App. Your deployed site should appear. 
 
@@ -166,7 +171,7 @@ This site is hosted by GitHub pages and deployed directly from the master branch
 I deployed the site by following the next steps:
 
 1. Logged into GitHub and located the correct repository
-2. Went into Settings at the top of my Enjoy Bristol repository
+2. Went into Settings at the top of my Lakka Furniture repository
 3. Located GitHub "Pages" in settings
 4. Selected "Master Branch" from the "Source" dropdown
 5. Page automatically refreshed, I scrolled back to "Pages" section to find the newly published site
@@ -191,23 +196,21 @@ To make a clone of this site, please follow these steps:
 
 All text and content on the page was written by myself apart from some Python logic which I found on a either code institute lessons or stack overflow or youtube. 
 
-My Terms and Conditions were taken from [LawDepot](https://www.lawdepot.com/) and changed to suit the sites needs.
-
 #### Media
 
 All images used on this page were taken from [unsplash.com](https://unsplash.com/). URL links taken from Google.
 
 #### Code
 
-Code for the navigation bar and footer were taken from [Bootstrap](https://getbootstrap.com/docs/4.5/getting-started/introduction/).
+Code for the navigation bar and footer were taken from [Bootstrap](https://mdbootstrap.com/).
 
-Code for the forms and buttons was taken from [W3 Schools](https://www.w3schools.com/).
+Code for the forms and buttons was taken from [Django](https://www.djangoproject.com/).
 
-Code for User Authentication and CRUD functionality taken from Code Institue lessons.
+Code for User Authentication and CRUD functionality taken from Code Institue lessons and [Django](https://www.djangoproject.com/).
 
-All other code was written by myself with help from sites [Stack Overflow](https://stackoverflow.com/)
+All other code was written by myself with help from sites [Stack Overflow](https://stackoverflow.com/) and Code Institute lessons.
 
 
 ## Acknowledgments
 
-Acknoledgments are for my mentor Adegbenga Adeye. Jim Morel and Brian XS who I met through Slack helped with various other issues. 
+Acknoledgments are for my mentor Adegbenga Adeye. Jim Morel and Brian Smyth who I met through Slack helped with various other issues. 
