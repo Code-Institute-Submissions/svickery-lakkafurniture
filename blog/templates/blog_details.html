@@ -12,13 +12,18 @@
 {% block content %}
 
 <div class="container">
-    <h2 class="home-text text-center">{{ post.title }}</h2>
+    <div class="row">
+        <div class="col text-center mt-3">
+            <h1 class="home-text">{{ post.title }}</h1>
+        </div>
+    </div>
     <small class="home-text">By: {{ post.author }}</small><br>
     <small><a href="{% url 'update_post' post.pk %}"a>Edit</a></small>
-    <small><a href="{% url 'delete_post' post.pk %}"a>Delete</a></small><br>
-    <hr>
+    |
+    <small><a class="text-danger " href="{% url 'delete_post' post.pk %}"a>Delete</a></small><br>
+    <hr class="w-50 mb-1">
     <br>
-    <p class="home-text align-justify">
+    <p class="home-text align-center">
 
         {% if post.header_image %}
             <img class="blog-img" src="{{ post.header_image.url }}"><br><br>

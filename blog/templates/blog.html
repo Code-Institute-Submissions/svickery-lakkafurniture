@@ -12,12 +12,19 @@
 {% block content %}
 
 <div class="container">
-
+    <div class="row">
+        <div class="col text-center mt-3">
+            <h1 class="home-text">Blog</h1>
+            <hr class="w-50 mb-1">
+        </div>
+    </div>
+<br>
 <ul class="home-text text-left blog-container">
 {% for post in object_list %}
     <li class="home-text text-left p-3"><a class="home-text" href="{% url 'blog-article' post.pk %}"><h2>{{ post.title }}</h2></a> - 
         {{ post.author }} <small><a href="{% url 'update_post' post.pk %}"a>Edit</a></small>
-        <small><a href="{% url 'delete_post' post.pk %}"a>Delete</a></small><br>
+        |
+        <small><a class="text-danger " href="{% url 'delete_post' post.pk %}"a>Delete</a></small><br>
     <p class="home-text text-left">{{ post.body|slice:"200"|safe }}</p></li>
     <br>
 {% endfor %}

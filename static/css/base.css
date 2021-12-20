@@ -253,7 +253,8 @@ img {
 } */
 
 .card-img, 
-.blog-img {
+.blog-img,
+.image-container {
     position: relative;
     display: block;
     margin-left: auto;
@@ -261,6 +262,9 @@ img {
     max-width: 500px;
     max-height: 500px;
     overflow: hidden;
+    -webkit-border-radius: 5px !important;
+    -moz-border-radius: 5px !important;
+    border-radius: 5px !important;
 }
 
 .card-img:after {
@@ -286,8 +290,8 @@ textarea {
     padding:5px;
     height:16px;
     line-height:16px;
-    width:600px;
-    height: 400px;
+    width: auto;
+    height: auto;
     display:block;
     margin:0px auto;    
   }
