@@ -450,20 +450,28 @@ textarea {
         padding-top: 116px;
     }
 
-    .h3-home {
-        margin-top: 10px;
-    }
-
-    .abt-txt {
-        padding-top: 10px;
-    }
-
-    .about-img {
-        max-height: 400px;
-        max-width: 400px;
-    }
-
     body {
         height: calc(100vh - 116px);
+    }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .about-img{
+        max-height: 350px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .about-img{
+        max-height: 350px;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 767px) {
+    .about-img{
+        max-height: auto;
     }
 }
