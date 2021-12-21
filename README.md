@@ -9,7 +9,7 @@ Admin credentials:
 
 [View in Heroku](https://lakkafurniture.herokuapp.com/)
 
-![alt text]()
+![alt text](https://github.com/svickery/lakkafurniture/blob/839efaa85af7f06d6d3d5fcbcb689024dbad7ebf/readme/lakkafurniture.jpeg)
 
 Unfortunately my ReadME is not in depth. There have been major issues with me deploying to heroku and due to time constraints as mentioned above, I could not complete the site as necessary. I know that I will have failed this project and I will have to retake. I used a lot of templates from a project on code institute and I didn't even have the time necessary to style it how I wanted. I couldn't write in the content I wanted. But the back bone of the project is there. I just ran out of time to make it as stylistically as good as I wanted.  
 
@@ -98,11 +98,11 @@ The website has a scrolling effect on the index page and reviews page using a pa
 
 The Home page features one large photography covering the top of the page. This includes hero text on the image. The hero text has a link to join the website as a member. Below the image there is an about section explaining to the user what the website is for and how they can get involved themselves. The name of the site also appears as a header and there is no logo used for the site. 
 
-#### Reviews
+#### About Us
 
 The reviews page has a similar layout to the home page with a large image at the top and hero text allowing the user to join as a member easily. Below this image there are then cards which have large eye catching images and beneath those images, there is all the information you would need about a movie. Below that further is the review of the movie. This review section has a scrolling effect so that the user doesn't have to navigate elsewhere to read it in its full form. At the bottom of the review is the contributors name.   
 
-#### Sign Up
+#### Register
 
 A page linked on both the home and review pages. There is a basic form for your details to become a contributor to the site. This form also has a link to the terms and conditions of the website.   
 
@@ -114,6 +114,8 @@ This page has a simple log in form for users who are already members.
 
 Once a user has logged in, they will be redirected immediately to their own profile page. This has a flash message to welcome the user, a title for the profile user and an add review button underneath. This is designed to encourage the user to contribute immediately. Beneath that the user will be able to see all their past reviews they have written. Each review has an option to edit and delete in bold red. The edit function opens a new page.
 
+#### Products
+
 #### Add Review
 
 Located in the navigation bar as well as being able to from the previously mentioned add review button on the profile page. Users can add a review whenever the choose and will be given a simple form to follow. This includes a url link for the user to add for the review. Once the information is complete and the review is written, there is a submit button to add this to the site. This review will be visible to all people navigating to the site. Dropdown menu's have been added to the genre and rating fields, to make it easier for the user.
@@ -122,13 +124,11 @@ Located in the navigation bar as well as being able to from the previously menti
 
 This is not available in the navigation but links directly from the edit button. This page will render all the previous information supplied in the review. Dropdown menu's have been added to the genre and rating fields, to make it easier for the user. 
 
+#### Blog
+
 #### Log Out
 
 This is located in the navbar and is only a single click function. 
-
-#### Terms and Conditions
-
-Not located in the navbar and only accessible from the sign up form. 
 
 #### Footer
 
@@ -153,7 +153,7 @@ In the footer is copyright information and links to the social media sites.
 * [W3Schools](https://www.w3schools.com/) - Used to help with various coding questions.
 * [Autoprefixer](https://autoprefixer.github.io/) - Used to ensure CSS is correct
 * [JQuery](https://jquery.com/) - Used for JQuery elements applied in JavaScript and some help with writing code.
-* [Rotten Tomatoes](https://www.rottentomatoes.com/) - Used to have reviews added to site.
+* [Postman](https://www.postman.com/) - Used to beautify the json files.
 * [W3 Validator](https://validator.w3.org/#validate_by_input) - Used to ensure HTML is correct.
 * [JS Lint](https://jslint.com/) - Used to ensure JavaScript is correct.
 * [Python](https://www.python.org/) - Language used to present data.
@@ -162,8 +162,10 @@ In the footer is copyright information and links to the social media sites.
 * [Jinja](https://jinja.palletsprojects.com/en/3.0.x/) - Templating language used with Python and Flask.
 * [Flask](https://flask.palletsprojects.com/en/2.0.x/) - Web framework used with Python.
 * [Heroku](https://id.heroku.com/login) - Cloud based app for deploying websites.
+* [Techsini](https://techsini.com/multi-mockup/index.php) - Website to display mock up of build.
 
 ## Database Schema
+
 
 
 ## Testing
