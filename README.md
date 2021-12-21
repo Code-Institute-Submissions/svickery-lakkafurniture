@@ -109,7 +109,7 @@ On every page. The footer contains copyright, contact and some info about Lakka.
 
 #### Register
 
-Embedded in the My Profile menu in the main navigation. The register page is what it says on the tin. You can register with an email, username and password. Very simple.   
+Embedded in the My Profile menu in the main navigation. The register page is what it says on the tin. You can register with an email, username and password. Very simple. Once registered, the user will have to confirm their email before proceeding.   
 
 #### Log In
 
@@ -206,6 +206,141 @@ The JS validator shows up some issues with certain characters being used, such a
 ![alt text](https://github.com/svickery/lakkafurniture/blob/839efaa85af7f06d6d3d5fcbcb689024dbad7ebf/readme/pep8example.jpeg "Python Validator")
 
 Most of the python files passed the validator, but some didn't due to unavoidable logic. The most common error was that the code line was too long. However if you moved some of the logic to another line it would break the site. 
+
+#### Testing User Stories
+
+ * ##### New Visitor Goals
+   
+    i. *As a new visitor I want to be able to access the website on any device available to me*
+  
+     a. Site is fully functional upon load and is designed with mobile first in mind. 
+     b. All info is available in any format, no information has been removed or shortened.
+     
+    ii. *As a new visitor I want to easily navigate the website*
+    
+     a. As soon as the website is clicked there is a navigation bar at the top of the page.
+     b. Scrolling down the page, navigation is still easy as the navigation bar stays at the top of the page. 
+    
+    iii. *As a new visitor I want it so content is easily read and information must be displayed correctly*
+   
+     a. As site loads, colour scheme is modern and clean.  
+     b. Font is clear and professional, easy to read and large where necessary.
+     c. All functions are explained to the user, such as buttons and clickable pictures in Shopping section.
+     
+![alt text](https://github.com/svickery/lakkafurniture/blob/839efaa85af7f06d6d3d5fcbcb689024dbad7ebf/readme/home.jpg)
+    
+ * ##### User Goals
+ 
+    i. *As a user I want to see unique furniture*
+    
+     a. Navigation immmediately leads you to products pages. 
+    
+   ii. *As a user I want to see the price of all items*
+   
+   a. All prices are on display on every page of the products section.
+     
+![alt text](https://github.com/svickery/lakkafurniture/blob/839efaa85af7f06d6d3d5fcbcb689024dbad7ebf/readme/products.jpg)
+     
+   iii. *As a user I want to know the delivery charge if there is one*
+     
+   a. There is no delivery charge.
+     
+   iv. *As a user I want to be able to purchase as a guest*
+    
+   a. This is the initial option when purchasing but you can also become a member at checkout.
+     
+   v. *As a user I want to be able to make an account to see order history etc*
+   
+   a. Can either join when purchasing as mentioned above.
+   b. Or can join through the My Profile option in the top right of the navigation bar. There is an option to Register.
+     
+   vi. *As a user I want to be able to save my card details*
+   
+   a. Lakka will not store the card details. The card service Lakka uses called Stripe will keep those details on our behalf.
+     
+   vii. *As a user I want to be able to search for certain products*
+   
+   a. There is a search bar available on every page in the sticky top navigation bar.
+     
+   viii. *As a user I want to see testimonials of previous work*
+   
+   a. Did not add to site due to time constraints. A review option was added instead.
+   
+ ![alt text](https://github.com/svickery/lakkafurniture/blob/839efaa85af7f06d6d3d5fcbcb689024dbad7ebf/readme/reviews.jpg)
+     
+   ix. *As a user I want to be able to contact the site owner for bespoke work*
+   
+   a. Contact details are in the footer and users are encouraged to contact the site owners.
+     
+   x. *As a user I want to see social media links*
+   
+   a. These are located in the footer and open an external page. 
+     
+   xi. *As a user I want to be able to cancel/change order before going ahead*
+   
+   a. This is available in the Your Items page.
+     
+   xii. *As a user I want to be able to see my purchases before going ahead*
+   
+   a. This is available in the Your Items page.
+   
+![alt text](https://github.com/svickery/lakkafurniture/blob/839efaa85af7f06d6d3d5fcbcb689024dbad7ebf/readme/bag.jpg)
+     
+   xiii. *As a user/admin I want to be able to log in/out easily*
+   
+   a. Very easy to logout and login using the My Profile option in the top right of the navigation bar.
+
+ * #### Admin Goals
+
+    i. *As an admin I want to be able to create, edit and delete products from my account*
+    
+     a. All possible.
+     b. Once logged in, these options are available in your Product Management page. In the My Account menu.
+     
+   ![alt text](https://github.com/svickery/lakkafurniture/blob/839efaa85af7f06d6d3d5fcbcb689024dbad7ebf/readme/profile.jpg)
+     
+   ii. *As an admin I must have log in functionality*
+   
+     a. Available in the My Profile menu option.
+     
+  iii. *As an admin I want to be able to create, edit and delete blog posts*
+  
+   a. Available once a member and super user. 
+   
+   ![alt text](https://github.com/svickery/lakkafurniture/blob/839efaa85af7f06d6d3d5fcbcb689024dbad7ebf/readme/profile.jpg)
+ 
+ * ##### Site Owner Goals
+ 
+    i. *I want to be able to have customers contact site*
+    
+     a. Contact info is in the footer.
+     b. About Us information explains what the site owners can be contacted for.
+     
+    ii. *Be able to log in and out as admin*
+    
+     a. Once assigned as admin the database will ping that information when you log in.
+     b. Site owner will have to give you permission as a super user to make certain changes.
+     
+   ![alt text](https://github.com/svickery/lakkafurniture/blob/839efaa85af7f06d6d3d5fcbcb689024dbad7ebf/readme/signin.jpg)
+   ![alt text](https://github.com/svickery/lakkafurniture/blob/839efaa85af7f06d6d3d5fcbcb689024dbad7ebf/readme/signout.jpg)
+     
+   iii. *Make it so other admins can be used for furniture sellers*
+   
+     a. Product Management menu option allows fellow furniture creators to add items easily.
+     
+   ![alt text](https://github.com/svickery/lakkafurniture/blob/839efaa85af7f06d6d3d5fcbcb689024dbad7ebf/readme/productmanagement.jpg)
+     
+    iv. *Provide a clean user experience*
+    
+     a. Page is clean to look at and smooth to use. No bugs visually.  
+        
+     v. *Provide information to and from database*
+     
+     a. Easily accessible as a super user in your admin dashboard.
+     
+    vi. *Be able to add to the database easily*
+    
+     a. Easily accessible as a super user in your admin dashboard.
 
 #### Further Testing
 
