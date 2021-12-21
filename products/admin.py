@@ -2,8 +2,8 @@ from django.contrib import admin
 from .models import Product, Category, ProductReview
 
 
-
 class ProductAdmin(admin.ModelAdmin):
+    """Data fields for Products"""
     list_display = (
         'sku',
         'name',
@@ -14,6 +14,7 @@ class ProductAdmin(admin.ModelAdmin):
     )
 
     ordering = ('sku',)
+
 
 class CategoryAdmin(admin.ModelAdmin):
     list_display = (
