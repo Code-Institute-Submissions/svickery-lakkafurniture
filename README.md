@@ -179,7 +179,7 @@ This is located in the navbar and is only a single click function.
 
 Below shows the database schema used and how they flow together with the arrows.
 
-![alt text](https://github.com/svickery/lakkafurniture/blob/839efaa85af7f06d6d3d5fcbcb689024dbad7ebf/readme/QuickDBD-Free Diagram.jpeg)
+![alt text](https://github.com/svickery/lakkafurniture/blob/cd2b74169bb6887461865457ba1152677d124c24/readme/databaseschema.jpeg)
 
 ## Testing
 
