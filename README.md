@@ -75,36 +75,43 @@ As a site user, I want to:
 
 As an admin, I want to:
 
-1. As an admin I want to be able to create, edit and delete items from my account
-2. As an admin I want to be able to create, edit and delete items from my account
-3. As an admin I must have log in functionality
+1. As an admin I want to be able to create, edit and delete products from my account
+2. As an admin I must have log in functionality
 
 As a site owner, I want to:
 
-1. I want to be able to contact customers 
+1. I want to be able to have customers contact site 
 2. Be able to log in and out as admin 
 3. Make it so other admins can be used for furniture sellers
 4. Provide a clean user experience
 5. Provide information to and from database
 6. Be able to add to the database easily
 
-The site changed a lot from its original conception. Due to time constraints due to health issues and working a full time job also I had to rapidly change while thinking on my feet. The basic needs are there, but I would have preferred to add a review system to the site.  
+## Wireframes
+
+[View Wireframes Here](https://www.figma.com/file/dNiiFzoZEROA2xMzoSifbT/Lakka-Furniture?node-id=0%3A1)
+
+The site changed a lot from its original conception. The original wireframes are there in style but the direction of the site changed a lot during the build. Due to time constraints due to health issues and working a full time job also I had to rapidly change while thinking on my feet. The basic needs are there, but I would have preferred to add a review system to the site.  
 
 ## Features
 
-The website has a scrolling effect on the index page and reviews page using a parallax effect. This is so the website not only looks good but also be navigated easily. There are seperate pages for different needs such as sign up form, log in form and add review form once a member. The navigation bar has been fixed at the top so that all pages are available during use of the site. In total there are nine pages available to use. However if you are not a member there are only four pages to view. On the reviews page there is a search bar to search for whichever movie they would like to see a review of. There is a footer with social media links at the bottom of each page. This footer also contatins copyright information.  
+The website has a scrolling effect throughout. This is so the website not only looks good but also be navigated easily. There are seperate pages for different needs such as sign up form, log in form and add blog post form once a member. You can also add a review, if you are a member or not. The navigation bar has been fixed at the top so that all pages are available during use of the site.  
 
 #### Home
 
-The Home page features one large photography covering the top of the page. This includes hero text on the image. The hero text has a link to join the website as a member. Below the image there is an about section explaining to the user what the website is for and how they can get involved themselves. The name of the site also appears as a header and there is no logo used for the site. 
+The Home page features one large photograph covering the top of the page. There is no hero text. The menu and search bar are easily navigated and the my profile page is visible immediately, as is the shopping trolley image.
 
 #### About Us
 
-The reviews page has a similar layout to the home page with a large image at the top and hero text allowing the user to join as a member easily. Below this image there are then cards which have large eye catching images and beneath those images, there is all the information you would need about a movie. Below that further is the review of the movie. This review section has a scrolling effect so that the user doesn't have to navigate elsewhere to read it in its full form. At the bottom of the review is the contributors name.   
+The about us section is featured on the hope page, one section down from the hero image mentioned above. The about us is short and sweet, containing some writing about how the company started and what is on offer on the site. This flows down to the footer as it mentions the contact details needed in the about us section. 
+
+#### Footer
+
+On every page. The footer contains copyright, contact and some info about Lakka. There are also links to social media pages. 
 
 #### Register
 
-A page linked on both the home and review pages. There is a basic form for your details to become a contributor to the site. This form also has a link to the terms and conditions of the website.   
+Embedded in the My Profile menu in the main navigation. The register page is what it says on the tin. You can register with an email, username and password. Very simple.   
 
 #### Log In
 
@@ -112,33 +119,37 @@ This page has a simple log in form for users who are already members.
 
 #### Profile 
 
-Once a user has logged in, they will be redirected immediately to their own profile page. This has a flash message to welcome the user, a title for the profile user and an add review button underneath. This is designed to encourage the user to contribute immediately. Beneath that the user will be able to see all their past reviews they have written. Each review has an option to edit and delete in bold red. The edit function opens a new page.
+Profile page contains profile information wanted by a customer. Not only is it delivery details etc but an entire order history from the site. 
 
 #### Products
 
+The products are featured in each individual product section in the same way. They are centered on the page to show a big image of the item and show the price and short description. Admin users can see an edit and delete function. All products are scrollable on the page and the amount of products depends on which section the user has clicked on.
+
+#### Product Details
+
+Once clicking on a product from the product page, you are taken to a singular item page which shows a bigger picture of the item, a description, a rating and price. There is an add to bag button for each item. Which is self explanatory. There is a back to shopping button too, if the user decides not to buy the product.
+
 #### Add Review
 
-Located in the navigation bar as well as being able to from the previously mentioned add review button on the profile page. Users can add a review whenever the choose and will be given a simple form to follow. This includes a url link for the user to add for the review. Once the information is complete and the review is written, there is a submit button to add this to the site. This review will be visible to all people navigating to the site. Dropdown menu's have been added to the genre and rating fields, to make it easier for the user.
-
-#### Edit Review
-
-This is not available in the navigation but links directly from the edit button. This page will render all the previous information supplied in the review. Dropdown menu's have been added to the genre and rating fields, to make it easier for the user. 
+Located on the product details page. Any user of the site can add a review of any item on the site.
 
 #### Blog
+
+A new item for super users. This is so fellow woodmakers can offer tips, advertise products and show tutorials. It is for the woodworking community to help one another. On the initial page there will be a snippet of text from the blog post, a title and who wrote the article. When you click on the article, the full content will appear. This is then editable or deletable for the authorised user.
+
+#### Checkout
+
+Once products have been selected the user will click the shopping trolley icon, which will be obvious due to the success messages that apppear when adding a product to the basket. You will then be taken to a Your Items page. This will confirm the items you would like to purchase. Click secure checkout. You can then either checkout as a guest or make yourself a member of the site. Either way you will be given purchase confirmation when complete.
 
 #### Log Out
 
 This is located in the navbar and is only a single click function. 
 
-#### Footer
-
-In the footer is copyright information and links to the social media sites.
-
 #### Possible Future Features
 
-* Use an API to bring local current showing times in cinemas near them. 
-* A comments section for each review. Only members are allowed to use this.
-* Could be expanded to include TV shows also.
+* A contact page to directly message the website owners. 
+* A comments section for each blog post.
+* Could be expanded to include more e-commerce items.
 
 
 ## Technologies Used
