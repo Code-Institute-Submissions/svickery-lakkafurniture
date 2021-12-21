@@ -3,7 +3,6 @@ from django.urls import path
 from .views import Blog, BlogDetail, AddPost, UpdatePost, DeletePost
 
 urlpatterns = [
-    """Frontend Path ways"""
     path('', Blog.as_view(), name="blog"),
     path('article/<int:pk>', BlogDetail.as_view(), name='blog-article'),
     path('add_post/', AddPost.as_view(), name="add_post"),
