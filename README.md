@@ -177,7 +177,9 @@ This is located in the navbar and is only a single click function.
 
 ## Database Schema
 
+Below shows the database schema used and how they flow together with the arrows.
 
+![alt text](https://github.com/svickery/lakkafurniture/blob/839efaa85af7f06d6d3d5fcbcb689024dbad7ebf/readme/QuickDBD-Free Diagram.jpeg)
 
 ## Testing
 
