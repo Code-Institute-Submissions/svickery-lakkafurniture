@@ -148,6 +148,7 @@ This is located in the navbar and is only a single click function.
 * A contact page to directly message the website owners. 
 * A comments section for each blog post.
 * Could be expanded to include more e-commerce items.
+* Better logic to differentiate between members and super users. 
 
 
 ## Technologies Used
