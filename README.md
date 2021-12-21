@@ -11,8 +11,6 @@ Admin credentials:
 
 ![alt text](https://github.com/svickery/lakkafurniture/blob/839efaa85af7f06d6d3d5fcbcb689024dbad7ebf/readme/lakkafurniture.jpeg)
 
-Unfortunately my ReadME is not in depth. There have been major issues with me deploying to heroku and due to time constraints as mentioned above, I could not complete the site as necessary. I know that I will have failed this project and I will have to retake. I used a lot of templates from a project on code institute and I didn't even have the time necessary to style it how I wanted. I couldn't write in the content I wanted. But the back bone of the project is there. I just ran out of time to make it as stylistically as good as I wanted.  
-
 A website designed for the sale of bespoke furniture goods. It is a site that was birthed from making many bespoke items over the years and deciding to mass produce some of their best products. The idea is so that all people can have unique furniture in their home. While they sell stock items, the company still can be contacted for bespoke work and quotes. 
 
 The user goals of the website are as follows:
@@ -183,7 +181,31 @@ Below shows the database schema used and how they flow together with the arrows.
 
 ## Testing
 
-* Testing could not be completed due to issues deploying to Heroku at the final hour.
+* Testing for this site consisted of two things. Using validators to check the code and me personally testing every page to ensure they work. 
+
+[Markup Validator](https://validator.w3.org/#validate_by_input) 
+
+![alt text](https://github.com/svickery/lakkafurniture/blob/839efaa85af7f06d6d3d5fcbcb689024dbad7ebf/readme/htmlexample.jpeg "HTML Validator")
+
+The errors that have shown up are ones that can't be avoided. The errors are either in the head or the scripts section. The validator doesn't recognise jquery correctly and the head data is from VS Code's own template. 
+
+[CSS Validator](https://jigsaw.w3.org/css-validator/ "CSS Validator") 
+
+![alt text](https://github.com/svickery/lakkafurniture/blob/839efaa85af7f06d6d3d5fcbcb689024dbad7ebf/readme/cssexample.jpeg "CSS Validator")
+
+There were zero errors on the CSS.
+
+[JavaScript Validator](https://jslint.com/)
+
+![alt text](https://github.com/svickery/lakkafurniture/blob/839efaa85af7f06d6d3d5fcbcb689024dbad7ebf/readme/jsexample.jpeg)
+
+The JS validator shows up some issues with certain characters being used, such as the use of '$' and to use double quotes. However this would make the code unusable. Validator doesn't seem to recognise jquery.
+
+[Python Validator](http://pep8online.com/)
+
+![alt text](https://github.com/svickery/lakkafurniture/blob/839efaa85af7f06d6d3d5fcbcb689024dbad7ebf/readme/pep8example.jpeg "Python Validator")
+
+Most of the python files passed the validator, but some didn't due to unavoidable logic. The most common error was that the code line was too long. However if you moved some of the logic to another line it would break the site. 
 
 #### Further Testing
 
@@ -192,7 +214,8 @@ Below shows the database schema used and how they flow together with the arrows.
 
 #### Known Bugs
 
- * One bug is that the footer will only be at the bottom of the viewport and not the bottom of the page. 
+ * One bug is that the footer will only be at the bottom of the viewport and not the bottom of the page.
+ * Unable to add images to blog content currently. 
  
 ## Deployment
 
