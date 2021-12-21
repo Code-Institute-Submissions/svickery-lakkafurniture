@@ -2,11 +2,11 @@
 {% load static %}
 
 {% block page_header %}
-    <div class="container header-container">
-        <div class="row">
-            <div class="col"></div>
-        </div>
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
     </div>
+</div>
 {% endblock %}
 
 {% block content %}
@@ -15,13 +15,13 @@
 <br>
 <h2 class="home-text text-center">Delete: {{ post.title }}</h2>
 <div class="row justify-content-center align-items-center">
-<div class="form-group">
-<form class="text-center" method="POST">
-    {% csrf_token %}
-        <strong class="home-text text-center">ARE YOU SURE???</strong>
-        <br>
-        <br>
-        <button class="home-text btn border-black text-uppercase">Delete</button>
-</div>
+    <div class="form-group">
+        <form class="text-center" method="POST">
+            {% csrf_token %}
+            <strong class="home-text text-center">ARE YOU SURE???</strong>
+            <br>
+            <br>
+            <button class="home-text btn border-black text-uppercase">Delete</button>
+    </div>
 </div>
 {% endblock %}
