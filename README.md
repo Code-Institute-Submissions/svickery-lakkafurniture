@@ -2,8 +2,8 @@
 ## Bespoke Furniture E-Commerce Site
 
 Admin credentials:
-* User = admin
-* password = Admin1
+* User = Admin5
+* password = Password!!1
 
 [View website in Github pages!]()
 
